@@ -210,6 +210,7 @@ nav {
 }
 .homepage-cards {
     transition: transform .5s ease;
+    background-color: var(--light-color);
 }
 .homepage-cards:hover {
     transform: scale(1.05);
