@@ -1,6 +1,7 @@
 /* Imported Google font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Ysabeau+Office:wght@200&display=swap');
 
+
 :root {
     --primary-color: #1A120B;
     --secondary-color: #3C2A21;
@@ -8,15 +9,32 @@
     --light-color: #E5E5CB;
     --Quicksand: "Quicksand", sans-serif;
     --Ysabeau-Office: "Ysabeau+Office", sans-serif;
-
-
 }
 
 body {
-    width: 100%;
+    background-color: var(--light-color);
+    max-width: 100%;
 }
 
-/* Header Section*/
+/* DIVIDER */
+.divider {
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-family: var(--Ysabeau-Office);
+}
+.divider::before,
+.divider::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: var(--secondary-color);
+    margin: 5px;
+}
+
+/* HEADER SECTION */
 header {
     background-color: var(--secondary-color);
     font-family: var(--Quicksand);
@@ -104,31 +122,28 @@ nav {
     height: 30px;
 }
 
-/* Main Secion */
+/* MAIN SECTION */
 
 /* Banner */
 .hero-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../IMAGES/pexels-lumn-322207.jpg);
-    height: 600px;
+    height: 570px;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-
 .hero-text {
     text-align: center;
     position: absolute;
     width: 100%;
     color: var(--light-color);
     height: auto;
-    margin-top: 200px;
+    margin-top: 100px;
 }
-
 .hero-text h1 {
     font-size: 7em;
     font-family: var(--Quicksand)
 }
-
 .hero-text h2 {
     margin-top: -17px;
     font-family: var(--Ysabeau-Office);
@@ -136,13 +151,11 @@ nav {
     text-align: center;
     font-weight: 400;
 }
-
 .hero-text a {
     margin-top: 20px;
     font-size: 1.3em;
     font-family: var(--Ysabeau-Office);
 }
-
 .hero-text-btn {
     display: inline-block;
     width: 200px;
@@ -154,7 +167,6 @@ nav {
     outline: none;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
-
 .hero-text-btn:hover {
     border: 4px solid var(--tertiary-color);
     background-color: var(--light-color);
@@ -162,7 +174,49 @@ nav {
     transition: background-color 0.1s ease-in, color 0.1s ease-in;
 }
 
-/* SHOP PAGE */
+
+/* CATEGORIES SECTION */
+
+.categories-cards {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    font-family: var(--Quicksand);
+}
+.categories-cards img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.categories-labels {
+    padding-top: 20px;
+}
+.categories-button {
+    border: none;
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+}
+
+/* FEATURED SECTION */
+
+#featured-cards {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    font-family: var(--Ysabeau-Office);
+}
+.m-auto {
+    font-family: var(--Quicksand);
+}
+.homepage-cards {
+    transition: transform .5s ease;
+}
+.homepage-cards:hover {
+    transform: scale(1.05);
+}
+
+
+/* Shop Page */
 .card-img {
     filter: brightness(60%);
 }
@@ -173,49 +227,51 @@ nav {
     padding-left: 2em;
     padding-top: 1em;
 }
-.divider {
-    margin-top: 30px;
-    color: var(--primary-color);
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    font-family: var(--Ysabeau-Office);
-}
-.divider::before, .divider::after {
-    flex: 1;
-    content: '';
-    padding: 1px;
-    background-color: var(--secondary-color);
-    margin: 5px;
-}
 
-/* SHOP CARDS */
+/* Shop cards */
 .shop-card-body {
     text-align: left;
     padding-top: 1em;
 }
+
 .shop-card-title {
     color: var(--secondary-color);
 }
+
 .shop-card-text {
     color: var(--tertiary-color);
 }
+
 .shop-card-price {
     font-family: var(--Ysabeau-Office);
     font-weight: 500;
 }
+
 .shop-card {
-    transition: transform .2s;
+    transition: transform .5s ease;
 }
+
 .shop-card:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
+.card-footer {
+    background-color: var(--tertiary-color);
+}
 
+.card-footer:hover {
+    background-color: var(--light-color);
+}
+
+.bi-cart-plus {
+    color: var(--primary-color);
+}
 
 
 /* Media Queries for Tablet */
 @media only screen and (max-width: 920px) {
+
+    /* Banner */
     .hero-text {
         margin-top: 100px;
     }
@@ -223,6 +279,11 @@ nav {
 
 /* Media Queries for Mobile */
 @media only screen and (max-width: 530px) {
+
+    /* Headbar + Navbar */
+
+
+    /* Banner */
     .hero-text {
         margin-top: 150px;
     }
@@ -234,4 +295,6 @@ nav {
     .hero-text h2 {
         font-size: 1.4em;
     }
+
+
 }

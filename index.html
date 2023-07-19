@@ -12,7 +12,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- Bootstrap buttons CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- JQuery Library -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
@@ -25,78 +25,259 @@
 </head>
 
 <body>
+
     <!--Header-->
     <header class="sticky-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h2 class="my-md-3 site-logo"><a href="/index.html">ONLINE STORE</a></h2>
-                </div>
-                <div class="col">
-                    <p class="my-md-4 header-links">
-                        <a href="#" class="sign-in">Sign In</a>
-                        <a href="#" class="create-account">Create an Account</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid p-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/shop.html">SHOP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NEW ARRIVALS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-nav nav-icons">
-                    <form class="d-flex search-tool" role="search">
-                        <input type="search" class="form-control mx-3" placeholder="Search" aria-label="Search">
-                    </form>
-                    <button title="search-icon" class="nav-item rounded-circle search-icon btn" type="submit">
-                        <svg class="bi bi-search">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
-                    </button>
-                    <div class="nav-icons basket-tool mx-4">
-                        <a title="basket-icon" class="nav-item rounded-circle basket-icon btn" href="#" type="button">
-                            <svg class="bi bi-cart">
-                                <path
-                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                            </svg>
-                        </a>
+        <section id="header-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="my-md-3 site-logo"><a href="/index.html">ONLINE STORE</a></h2>
+                    </div>
+                    <div class="col">
+                        <p class="my-md-4 header-links">
+                            <a href="#" id="sign-in-link" class="sign-in">Sign In</a>
+                            <a href="#" id="sign-up-link" class="create-account">Create an Account</a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </nav>
-
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/shop.html">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-nav nav-icons">
+                        <form class="d-flex search-tool" role="search">
+                            <input type="search" class="form-control mx-3" placeholder="Search" aria-label="Search">
+                        </form>
+                        <button title="search-icon" class="nav-item rounded-circle search-icon btn" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <div class="nav-icons basket-tool mx-4">
+                            <a title="basket-icon" class="nav-item rounded-circle basket-icon btn" href="#"
+                                type="button">
+                                <svg class="bi bi-cart">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
     </header>
 
     <!--Main-->
     <main>
-        <div class="hero-banner">
-            <div class="hero-text">
-                <h1>I am Jesse Christians</h1>
-                <h2>Welcome to your new wardrobe</h2>
-                <a class="btn hero-text-btn" href="/shop.html">SHOP</a>
+        <!-- Hero Banner -->
+        <section id="banner-section">
+            <div class="hero-banner">
+                <div class="hero-text">
+                    <h1>I am Jesse Christians</h1>
+                    <h2>Welcome to your new wardrobe</h2>
+                    <a class="btn hero-text-btn" href="/shop.html">SHOP</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Categories -->
+        <section id="categories-section">
+            <div class="divider py-5">CATEGORIES</div>
+
+            <div class="categories-cards text-center">
+                <div class="col">
+                    <a href="#" type="button" class="btn categories-button"><img
+                            src="/IMAGES/pexels-og-productionz-15647638.jpg" class="card-img-top" alt="Men clothing">
+                        <div class="categories-labels">
+                            <h5 class="mens-clothing fw-bold">MEN</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" type="button" class="btn categories-button">
+                        <img src="/IMAGES/pexels-malcolm-garret-12518771.jpg" class="card-img-top" alt="Women clothing">
+                        <div class="categories-labels">
+                            <h5 class="womens-clothing fw-bold">WOMEN</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" type="button" class="btn categories-button">
+                        <img src="/IMAGES/pexels-ba-tik-3754246.jpg" class="card-img-top" alt="inspiration gallery">
+                        <div class="categories-labels">
+                            <h5 class="inspiration-gallery fw-bold">GALLERY</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Featured Divider -->
+        <section id="featured-section">
+            <div class="divider py-5">FEATURES</div>
+
+
+            <div id="featured-cards" class="container py-3">
+                <div class="row text-center py-3">
+                    <div class="col-lg-16 m-auto">
+                        <h1 class="fw-bold">FEATURED PRODUCTS</h1>
+                        <p class="fw-bold">These are our best-sellers</p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card h-100 homepage-cards">
+                            <a href="./PRODUCTS/loafers.html" class="">
+                                <img src="/IMAGES/pexels-pixabay-267301.jpg" class="card-img-top" alt="Crocodile Loafers">
+                            </a>
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex justify-content-between">
+                                    <li>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warningbi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li class="text-muted text-right">R2499.00</li>
+                                </ul>
+                                <a href="./PRODUCTS/loafers.html" class="h2 text-decoration-none text dark">Crocodile Leather Slip Loafers</a>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio!.</p>
+                                <p class="text-muted">Reviews (26)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 homepage-cards">
+                            <a href="#" class="">
+                                <img src="/IMAGES/pexels-mnz-1598505.jpg" class="card-img-top" alt="Fresh Foam Runners">
+                            </a>
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex justify-content-between">
+                                    <li>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                    </li>
+                                    <li class="text-muted text-right">R1699.00</li>
+                                </ul>
+                                <a href="#" class="h2 text-decoration-none text dark">Nike Air Jordan Sneakers</a>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio!.</p>
+                                <p class="text-muted">Reviews (78)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 homepage-cards">
+                            <a href="#" class="">
+                                <img src="/IMAGES/pexels-cottonbro-studio-6636592.jpg" class="card-img-top" alt="Shades">
+                            </a>
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex justify-content-between">
+                                    <li>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li class="text-muted text-right">R700.00</li>
+                                </ul>
+                                <a href="#" class="h2 text-decoration-none text dark">Square Frame Shades</a>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio!.</p>
+                                <p class="text-muted">Reviews (13)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 homepage-cards">
+                            <a href="#" class="">
+                                <img src="/IMAGES/pexels-the-lazy-artist-gallery-1300550.jpg" class="card-img-top" alt="Burgundy Suit">
+                            </a>
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex justify-content-between">
+                                    <li>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li class="text-muted text-right">R1800.00</li>
+                                </ul>
+                                <a href="#" class="h2 text-decoration-none text dark">Burgundy Slim Fit Suit</a>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio!.</p>
+                                <p class="text-muted">Reviews (31)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 homepage-cards">
+                            <a href="#" class="">
+                                <img src="/IMAGES/pexels-mart-production-9558584.jpg" class="card-img-top" alt="Womens Oversized T-shirt">
+                            </a>
+                            <div class="card-body">
+                                <ul class="list-unstyled d-flex justify-content-between">
+                                    <li>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="text-warning bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li class="text-muted text-right">R249.00</li>
+                                </ul>
+                                <a href="#" class="h2 text-decoration-none text dark">Womens Oversized T-shirt</a>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio!.</p>
+                                <p class="text-muted">Reviews (29)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section></section>
+
+        <!-- Infinite Card Carousel -->
+        <div class="container-fluid">
+            <div class="card-carousel px-md-4">
+                <div class="row">
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="/IMAGES/" alt="">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
