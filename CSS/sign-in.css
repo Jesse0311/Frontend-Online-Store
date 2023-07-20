@@ -1,0 +1,23 @@
+/* Imported Google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Ysabeau+Office:wght@200&display=swap');
+
+
+:root {
+    --primary-color: #1A120B;
+    --secondary-color: #3C2A21;
+    --tertiary-color: #c2b97b;
+    --light-color: #E5E5CB;
+    --Quicksand: "Quicksand", sans-serif;
+    --Ysabeau-Office: "Ysabeau+Office", sans-serif;
+}
+main {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url(), var(--light-color);
+    background-size: cover;
+
+}

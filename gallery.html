@@ -21,6 +21,7 @@
     <link href="https://fonts.cdnfonts.com/css/tums-basic" rel="stylesheet">
 
     <!--Stylesheet-->
+    <link rel="stylesheet" href="./CSS/gallery.css">
     <link rel="stylesheet" href="./CSS/stylesheet.css">
 </head>
 
@@ -58,10 +59,7 @@
                                 <a class="nav-link" href="/shop.html">SHOP</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">UPCOMING COLLECTION</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#features">GALLERY</a>
+                                <a class="nav-link" href="/gallery.html">GALLERY</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">ABOUT US</a>
@@ -92,45 +90,56 @@
 
     <!--Main-->
     <main>
+        <div class="row text-center py-3 w-100">
+            <div class="col-lg-16 m-auto">
+                <h1 class="fw-bold">GALLERY ITEMS</h1>
+                <p class="fw-bold">Here are a few samples to style your look</p>
+            </div>
+        </div>
+
+        <div class="full-image" id="full-image-box">
+            <img src="/IMAGES/Gallery/pexels-alireza-tawfiqi-17484793.jpg" id="full-image-active" alt="active image">
+            <span onclick="closeFullImg(); showHeader()">X</span>
+        </div>
         <div class="image-gallery">
-            <img src="/IMAGES/Gallery/pexels-alireza-tawfiqi-17484793.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-alireza-tawfiqi-17484795.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-antoni-shkraba-7081113.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-antoni-shkraba-production-8973451.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-arsham-haghani-3637151.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-bigshow-lamar-campton-8142367.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-brian-jr-asare-13221663.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-bruce-taylor-17033235.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-cottonbro-studio-7969812.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-cottonbro-studio-9168245.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-cottonbro-studio-9821880.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-dmitriy-ganin-7760783.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-eko-agalarov-8272074.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-emre-keshavarz-3919865.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-eunhyuk-ahn-2907034.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-fabian-rubilar-16453876.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-fika-photo-11175583.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-godisable-jacob-1027162.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-godisable-jacob-932405.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-harsh-vardhan-15531075.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-kara-muse-3833490.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-kate-gundareva-8594503.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-merlix-brada-5459474.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-moh-mckenzie-3597042.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-muhamad-lutfi-12430065.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-og-productionz-15647646.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-olanma-etigweuwa-16915379.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-polinach-16390442.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-raul-reynoso-1018911.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-ron-lach-9255736.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-ron-lach-9255738.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-rulo-davila-11588270.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-sasha-kim-8484108.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-tima-miroshnichenko-7202784.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-tino-nyoni-5602482.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-vicky-2874328.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-yogendra-singh-1760900.jpg" alt="Gallery image">
-            <img src="/IMAGES/Gallery/pexels-yuri-manei-2245433.jpg" alt="Gallery image">
+            <img src="/IMAGES/Gallery/pexels-alireza-tawfiqi-17484793.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-alireza-tawfiqi-17484795.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-antoni-shkraba-7081113.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-antoni-shkraba-production-8973451.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-arsham-haghani-3637151.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-bigshow-lamar-campton-8142367.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-brian-jr-asare-13221663.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-bruce-taylor-17033235.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-cottonbro-studio-7969812.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-cottonbro-studio-9168245.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-cottonbro-studio-9821880.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-dmitriy-ganin-7760783.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-eko-agalarov-8272074.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-emre-keshavarz-3919865.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-eunhyuk-ahn-2907034.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-fabian-rubilar-16453876.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-fika-photo-11175583.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-godisable-jacob-1027162.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-godisable-jacob-932405.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-harsh-vardhan-15531075.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-kara-muse-3833490.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-kate-gundareva-8594503.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-merlix-brada-5459474.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-moh-mckenzie-3597042.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-muhamad-lutfi-12430065.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-og-productionz-15647646.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-olanma-etigweuwa-16915379.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-polinach-16390442.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-raul-reynoso-1018911.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-ron-lach-9255736.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-ron-lach-9255738.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-rulo-davila-11588270.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-sasha-kim-8484108.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-tima-miroshnichenko-7202784.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-tino-nyoni-5602482.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-vicky-2874328.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-yogendra-singh-1760900.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
+            <img src="/IMAGES/Gallery/pexels-yuri-manei-2245433.jpg" alt="Gallery image" onclick="openFullImg(this.src); hideHeader()">
         </div>
     </main>
 
@@ -148,7 +157,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <script src="./JS/index.js"></script>
+    <script src="./JS/gallery.js"></script>
 </body>
 
 </html>
