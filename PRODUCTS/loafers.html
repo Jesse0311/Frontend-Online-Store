@@ -23,6 +23,11 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="../CSS/stylesheet.css">
     <link rel="stylesheet" href="../CSS/products.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
@@ -59,13 +64,13 @@
                                 <a class="nav-link" href="/shop.html">SHOP</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">NEW ARRIVALS</a>
+                                <a class="nav-link" href="#">UPCOMING COLLECTION</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#features">FEATURES</a>
+                                <a class="nav-link" href="#features">GALLERY</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT US</a>
+                                <a class="nav-link" href="#">ABOUT US</a>
                             </li>
                         </ul>
                     </div>
@@ -96,7 +101,23 @@
         <section class="product-page">
             <div class="product-details">
 
-                <div class="product-image"></div>
+                <div class="product-image">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/IMAGES/pexels-pixabay-267301.jpg" alt="Loafers">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/IMAGES/pexels-pixabay-267320.jpg" alt="Loafers">
+                            </div>
+                        </div>
+                        <div class="slider-buttons">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="product-text">
                     <span class="product-category">Features</span>
                     <h3>Crocodile Leather Loafers</h3>
@@ -151,6 +172,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Local JS file -->
     <script src="../JS/index.js"></script>
 </body>
 
