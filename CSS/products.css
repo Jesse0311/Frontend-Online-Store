@@ -28,9 +28,6 @@ ul {
 body {
     background-color: var(--light-color);
 }
-.header-links a {
-    font-family: var(--Quicksand);
-}
 
 /* Product Page */
 .product-details {

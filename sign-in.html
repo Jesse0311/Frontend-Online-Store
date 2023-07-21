@@ -29,12 +29,12 @@
     <!--Header-->
     <header class="sticky-top">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row pb-3">
                 <div class="col">
                     <h2 class="my-md-3 site-logo"><a href="/index.html">ONLINE STORE</a></h2>
                 </div>
                 <div class="col">
-                    <p class="my-md-4 header-links">
+                    <p class="my-md-4 header-links login-page">
                         <a href="#" class="sign-in">Sign In</a>
                         <a href="#" class="create-account">Create an Account</a>
                     </p>
@@ -75,7 +75,7 @@
                         </svg>
                     </button>
                     <div class="nav-icons basket-tool mx-4">
-                        <a title="basket-icon" class="nav-item rounded-circle basket-icon btn" href="#" type="button">
+                        <a title="basket-icon" class="nav-item rounded-circle basket-icon btn disabled" href="#" type="button">
                             <svg class="bi bi-cart">
                                 <path
                                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
@@ -90,24 +90,54 @@
 
     <!--Main-->
     <main>
-        <div class="container">
-            <form action="POST" class="form" id="login">
-                <h1 class="form-title">Login</h1>
-                <div class="form-message form-message-error">Incorrect username/password combination.</div>
+        <div class="login-container">
+            <h1 class="form-title">Login</h1>
+            <form method="get" class="login-form" id="login" action="./index.html">
                 <div class="form-input-group">
-                    <input type="text" class="form-input" autofocus placeholder="Username or email">
-                    <div class="form-input-error-message">This is an error message</div>
+                    <input type="text" class="form-input user-input" autofocus placeholder="Username or email"
+                        autocomplete="off">
+                    <span class="username-error-message">Please enter your Username</span>
                 </div>
                 <div class="form-input-group">
-                    <input type="password" class="form-input" autofocus placeholder="Password">
-                    <div class="form-input-error-message"></div>
+                    <input type="password" class="form-input password-input" autofocus placeholder="Password"
+                        autocomplete="off">
+                    <span class="password-error-message">Please enter your Password</span>
                 </div>
-                <buttton class="form-button" type="submit">Continue</buttton>
-                <p class="form-text">
+                <button type="submit" class="form-button signin-button btn-submit">Continue
+                </button>
+                <p class="form-text mb-1">
                     <a href="#" class="form-link">Forgot your password?</a>
                 </p>
-                <p class="form-text">
-                    <a class="form-link" id="createAccountLink">Don't have an account? Create one</a>
+                <p class="form-text mb-0">
+                    <a class="form-link" onclick="createAccountPage()" id="createAccountLink">Don't have an account?
+                        Create one</a>
+                </p>
+            </form>
+            <form  method="get" class="login-form" id="createAccount" action="./index.html">
+                <h1 class="form-title">Create Account</h1>
+                <div class="form-input-group">
+                    <input type="text" class="form-input" id="createUserName" autofocus placeholder="Username"
+                        autocomplete="off">
+                    <span class="username-input-error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <input type="text" class="form-input" id="createEmailAddress" autofocus placeholder="Email Address"
+                        autocomplete="off">
+                    <span class="email-input-error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" id="createPassword" autofocus placeholder="Password"
+                        autocomplete="off">
+                    <span class="password-input-error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" id="confirmPassword" autofocus
+                        placeholder="Confirm Password" autocomplete="off">
+                    <span class="confirm-input-error-message"></span>
+                </div>
+                <buttton class="form-button signup-button btn-submit" type="submit" name="submit-button">Continue</buttton>
+                <p class="form-text mb-0">
+                    <a class="form-link" onclick="signInPage()" id="loginLink">Already have an account? Sign in</a>
                 </p>
             </form>
         </div>
@@ -129,7 +159,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <script src="./JS/index.js"></script>
+    <script src="./JS/sign-in.js"></script>
 </body>
 
 </html>

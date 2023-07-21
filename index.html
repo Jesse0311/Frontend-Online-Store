@@ -36,8 +36,9 @@
                     </div>
                     <div class="col">
                         <p class="my-md-4 header-links">
-                            <a href="/sign-in.html" id="sign-in-link" class="sign-in">Sign In</a>
+                            <a href="./sign-in.html" id="sign-in-link" class="sign-in">Sign In</a>
                             <a href="#" id="sign-up-link" class="create-account">Create an Account</a>
+                            <span id="username"></span><i class="bi bi-box-arrow-right" onClick="window.location.reload();" id="logout-button"></i>
                         </p>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                             <i class="bi bi-search"></i>
                         </button>
                         <div class="nav-icons basket-tool mx-4">
-                            <a title="basket-icon" class="nav-item rounded-circle basket-icon btn" href="#"
+                            <a title="basket-icon" class="nav-item rounded-circle basket-icon btn" href="./cart.html"
                                 type="button">
                                 <svg class="bi bi-cart">
                                     <path
@@ -107,7 +108,7 @@
 
             <div class="container categories-cards text-center">
                 <div class="col">
-                    <a href="#" type="button" class="btn categories-button"><img
+                    <a href="./shop.html" type="button" class="btn categories-button"><img
                             src="/IMAGES/pexels-og-productionz-15647638.jpg" class="card-img-top" alt="Men clothing">
                         <div class="categories-labels">
                             <h5 class="mens-clothing fw-bold">MEN</h5>
@@ -115,7 +116,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="#" type="button" class="btn categories-button">
+                    <a href="./shop.html" type="button" class="btn categories-button">
                         <img src="/IMAGES/pexels-malcolm-garret-12518771.jpg" class="card-img-top" alt="Women clothing">
                         <div class="categories-labels">
                             <h5 class="womens-clothing fw-bold">WOMEN</h5>
@@ -276,28 +277,46 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section></section>
-
-        <!-- Infinite Card Carousel -->
-        <div class="container-fluid">
-            <div class="card-carousel px-md-4">
-                <div class="row">
-                    <div class="col-md-2 product pt-md-5 pt-4">
-                        <img src="/IMAGES/" alt="">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
     <!--Footer-->
-    <footer>
-
-    </footer>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="www.codespace.co.za">Web Design</a></li>
+                            <li><a href="#">Clothing Repairs</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="./sign-in.html">Online Store</a></li>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Producers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Gallery Models</a></li>
+                            <li><a href="#">Brand Ambassadors</a></li>
+                            <li><a href="#">Outreach Programme</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Online Store © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <!-- Boostrap CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
