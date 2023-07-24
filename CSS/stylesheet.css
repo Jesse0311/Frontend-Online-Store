@@ -225,7 +225,9 @@ nav {
 }
 
 /* FEATURED SECTION */
-
+.featured-prods h1, p {
+    color: var(--primary-color);
+}
 #featured-cards {
     background-color: var(--tertiary-color);
     width: 100%;
